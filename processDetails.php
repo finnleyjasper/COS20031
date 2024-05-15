@@ -1,12 +1,3 @@
-<!-----------------------------------------------------------------
-/* filename: processScore.php
-/* author: Finnley Newnham
-/* description: processes credentials sent from the apply.php form
-/*
-/* created: 27 April 2024
-/* last modified:
-------------------------------------------------------------------->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
