@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Score Submission</title>
+
+<meta charset="utf-8" />
+<meta name="description" content="Archery Australia's score submission portal"  />
+<meta name="keywords" content="Archery, Archery Australia, Score" />
+
+<style>
+    body {
+        text-align: center;
+    }
+    form {
+        margin: auto;
+    }
+</style>
+
+</head>
+<body>
+	<h1>New Score Submission</h1>
+	<form method="post" action="processDetails.php">
+
+    <p><i>New scores must be approved by a Recorder</i></p>
+
+	<fieldset><legend>New Score Details</legend>
+		<p class="row">	<label for="ArcherID">Archer ID: </label>
+			<input type="number" name="ArcherID" id="archerid" required="true" /></p>
+
+       <p class="row"><label for="RoundType">Round Type:</label>
+        <select name="RoundType" id="roundtype" required="true">
+            <option value="AA40/1440">AA40/1440</option>
+            <option value="AA50/1440">AA50/1440</option>
+            <option value="Adelaide">Adelaide</option>
+            <option value="Hobart">Hobart</option>
+            <option value="Long Brisbane">Long Brisbane</option>
+            <option value="Short Adelaide">Short Adelaide</option>
+            <option value="Sydney">Sydney</option>
+            <option value="Brisbane">Brisbane</option>
+            <option value="Long Sydney">Long Sydney</option>
+            <option value="Perth">Perth</option>
+            <option value="WA60/1440">WA60/1440</option>
+            <option value="WA70/1440">WA70/1440</option>
+            <option value="WA90/1440">WA90/1440</option>
+        </select></p>
+
+		<p class="row"><label for="ScoreDate">Date:</label>
+            <input type="date" id="scoredate" name="ScoreDate" required="true"></p>
+
+        <p class="row"><label for="ScoreTime">Time:</label>
+            <input type="time" id="scoretime" name="ScoreTime" required="true"></p>
+
+        <p class="row"><label for="EquipmentType">Equipment:</label>
+        <select name="EquipmentType" id="equipmenttype" required="true">
+            <option value="Compound">Compound</option>
+            <option value="Recurve Barebow">Recurve Barebow</option>
+            <option value="Recurve">Recurve</option>
+            <option value="Longbow">Longbow</option>
+            <option value="Compound Barebow">Compound Barebow</option>
+        </select></p>
+
+		<p>	<input type="submit" value="Add New Score" /></p>
+	</fieldset>
+	</form>
+</body>
+</html>
