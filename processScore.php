@@ -1,15 +1,3 @@
-<!-- / adding the range to the db
-        $insertRange = "INSERT INTO $tableStagedRangeScore (StagedID) SELECT MAX(StagedID) FROM $tableStaging";
-
-        $insertRangeResult = mysqli_query($conn, $insertRange);
-
-        //will flag if the data was not sent correctly and notify the user
-        if(!$insertResult) {
-            echo "<p>Error: Score could not be added at this time.</p>";
-        }
-    -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
